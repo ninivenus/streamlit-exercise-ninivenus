@@ -27,7 +27,7 @@ if show_bar:
       df,
       x="nation",
       y=f"{medal}",
-      title=f"Medals count({medal})"
+      title="Medals count"
   )
 
   fig_bar.update_layout(
@@ -45,7 +45,7 @@ if show_pie:
       df,
       names="Coutry",
       values=f"{medal}",
-      title=f"Medals count({medal})"
+      title="Medals count"
   )
 
   fig_pie.update_layout(
@@ -54,11 +54,4 @@ if show_pie:
   )
 
   col2.plotly_chart(fig_pie,use_container_width=True)
-
-
-# Set up the page
-
-
-
-# Codes for plotting
 
